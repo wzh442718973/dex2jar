@@ -28,7 +28,7 @@ import java.nio.file.Path;
 
 @BaseCmd.Syntax(cmd = "d2j-dex2jar", syntax = "[options] <file0> [file1 ... fileN]", desc = "convert dex to jar")
 public class Dex2jarCmd extends BaseCmd {
-
+    //wzh 主入口
     public static void main(String... args) {
         new Dex2jarCmd().doMain(args);
     }
@@ -63,6 +63,7 @@ public class Dex2jarCmd extends BaseCmd {
     @Opt(opt = "nc", longOpt = "no-code", hasArg = false, description = "")
     private boolean noCode = false;
 
+    //wzh 执行命令行
     @Override
     protected void doCommandLine() throws Exception {
         if (remainingArgs.length == 0) {

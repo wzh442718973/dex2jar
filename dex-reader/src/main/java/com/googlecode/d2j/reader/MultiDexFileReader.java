@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 import java.util.*;
-
+//ZIP压缩的带多个dex的文件
 public class MultiDexFileReader implements BaseDexFileReader {
     final private List<DexFileReader> readers = new ArrayList<>();
     final private List<Item> items = new ArrayList<>();

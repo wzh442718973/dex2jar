@@ -29,7 +29,7 @@ import com.googlecode.d2j.visitors.*;
 
 /**
  * Open and read a dex file.this is the entrance of dex-reader. to read a dex/odex, use the following code:
- * 
+ * wzh Dex文件解析读取
  * <pre>
  * DexFileVisitor visitor = new xxxFileVisitor();
  * DexFileReader reader = new DexFileReader(dexFile);
@@ -112,15 +112,15 @@ public class DexFileReader implements BaseDexFileReader {
     final ByteBuffer classDataIn;
     final ByteBuffer codeItemIn;
     final ByteBuffer encodedArrayItemIn;
-    final ByteBuffer stringIdIn;
-    final ByteBuffer typeIdIn;
-    final ByteBuffer protoIdIn;
-    final ByteBuffer fieldIdIn;
-    final ByteBuffer methoIdIn;
-    final ByteBuffer classDefIn;
+    final ByteBuffer stringIdIn;//字符串
+    final ByteBuffer typeIdIn;//类型
+    final ByteBuffer protoIdIn;//标识
+    final ByteBuffer fieldIdIn;//字段
+    final ByteBuffer methoIdIn;//方法
+    final ByteBuffer classDefIn;//类定义
     final ByteBuffer typeListIn;
-    final ByteBuffer stringDataIn;
-    final ByteBuffer debugInfoIn;
+    final ByteBuffer stringDataIn;//字符串数据
+    final ByteBuffer debugInfoIn;//调试信息
     final int string_ids_size;
     final int type_ids_size;
     final int field_ids_size;
